@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Browser Extension Test</title>
+<script type="text/javascript">
+chrome.tabs.getSelected(null, function(tab) {
+	chrome.pageAction.setIcon({tabId:tab.id, path:'seevl_16.png');
+});
+</script>
+<script type="text/javascript" src="js/background.js"></script>

@@ -1,0 +1,21 @@
+{
+	"name": "BrowserExtTest",
+	"version": "1.0",
+	"manifest_version": 2,
+	"description": "Chome extension test",
+	"icons": {
+		"128": "icons/seevl_128.png",
+		"16": "icons/seevl_16.png",
+		"48": "icons/seevl_48.png"
+	},
+	"browser_action": {
+		"default_icon": "icons/seevl_16.png",
+		"default_title": "Browser Extension Test"
+	},
+	"background": {
+		"scripts": ["js/background.js"]
+	},
+	"permissions": [
+		"tabs", "http://*/", "https://*/"
+	]
+}

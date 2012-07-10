@@ -1,0 +1,9 @@
+--------------------------------------------------------------
+SOURCES:
+http://code.google.com/chrome/extensions/devguide.html
+http://www.nsftools.com/misc/SearchAndHighlight.htm
+seevl extension for chrome
+word highlight extension for chrome
+http://stackoverflow.com/questions/8017463/chrome-extension-dev-modifying-the-dom-using-jquery
+http://stackoverflow.com
+--------------------------------------------------------------

@@ -1,0 +1,50 @@
+Hi Francesco,
+
+Thanks for the e-mail.
+
+Here's a recap about the evaluation task:
+
+* Goal:
+- Build a Chrome plug-in that gives additional contextual information
+about people (from a given database) found in webpages. The plugin
+should, when activated, highlight / underline all references about
+people name and, on mouseover on those names, display a pop-up with
+the person biography and picture.
+
+* People database:
+- The JSON file attached to this e-mail
+
+* Tools:
+- Use any javascript extension / library that you want
+- Use Chrome documentation, any forum, etc.
+- You can ask me any question by e-mail or skype
+
+* Objectives
+- Show how quickly you can learn a new toolkit
+- Show your coding skills in javascript / HTML / CSS
+- Show how you consider design an user-experience in such a process
+- Show that you can build a nice UI with HTML / JS / CSS only
+
+* Deliverable
+- The source code of the plugin (tgz)
+- A text file (a few lines / bullet points) explaining the design
+choices, and if you've been stuck during the process, how you solved
+your issues / which websites you used for this, etc.
+
+* Bonus
+- Use the YouTube API to display a random video in addition to the
+picture / biography
+- Put the JSON file on a webserver and use AJAX calls to get the date
+into the script
+- Separate the biograph + picture from the video using tabs in the pop-up
+- Whatever you consider as in improvement and that you want to include
+(if so, explain why you've done the improvement in the document)
+
+As discussed on the phone, it should not take too long once you see
+how a plug-in works - feel free to e-mail me whenever you think the
+result is acceptable enough.
+
+Best of luck,
+
+Alex.
+
