@@ -1,9 +1,60 @@
 --------------------------------------------------------------
 SOURCES:
+
 http://code.google.com/chrome/extensions/devguide.html
 http://www.nsftools.com/misc/SearchAndHighlight.htm
 seevl extension for chrome
 word highlight extension for chrome
 http://stackoverflow.com/questions/8017463/chrome-extension-dev-modifying-the-dom-using-jquery
 http://stackoverflow.com
+http://craigsworks.com/projects/qtip2/
+https://developers.google.com/youtube/
+
+--------------------------------------------------------------
+CHOICES:
+
+1. browserAction VS pageAction
+I thought that, being the extension activated onClick it's better to have its icon near the toolbar always visible (as suggested in http://code.google.com/chrome/extensions/browserAction.html)
+
+2. Single popup with 2 tabs VS 2 popups
+I'm not sure about this one: I started making 2 popups because I misunderstood your request (I thought of 2 popups instead og 2 tabs).
+I think 2 tabs will be better (see improvement 3)
+
+3. Popups colors
+I tried some ui-tooltip style and I found this one more fitting since I put a youtube videon in the popup (i had to modify the text color: the default ui-tooltip-youtube is unintelligible)
+
+4. Call to youtube synchronous
+Since it take some time to download the youtube feed (see improvement 1) qTip fail to fill the content section. I made the call synchronous so it'll wait the response (see improvement 4).
+
+--------------------------------------------------------------
+PROBLEMS:
+
+1. background.js VS contentscript.js
+As asked in a mail I sent you. Solved searching in forums/sites and studying examples. Once i got that there weren't great problems.
+
+2. Popup tab request misunderstood
+I was too tired (it was past midnight). That was my fault.
+
+3. qtip
+It took me some time (not as much as problem 1) to understand how to make it work. I didn't used jQuery for more than a year. Watching the seevl extension helped a lot (as I said via skype using google inspect element and the source code in  /home/<user>/.config/chromium/Default/Extensions)
+
+--------------------------------------------------------------
+IMPROVEMENT:
+
+1. Loading time
+I think that since it took some time to download the youtube feed it would be better to show a "loading" or "working" popup
+
+2. Popup colors
+I thought of changing the popups style depending on the page background color when it's possible (keeping ui-tooltip-youtube as default)
+
+3. 1 popup with 2 tab
+
+4. async youtube request
+Instead of loading all the popup at the beginning load them onmouseover. Loading them at the beginning make the loading slower (solvable with improvement 1), but faster during the UX.
+With few artists (my scenario) it's better to download the feed at the beginning (avoiding multiple requests for the same artist).
+With many artists it's better to load the popups one by one on mouse over
+
+5. stop other extensions
+I see that when my extension is activated other js stop working. That is a major issue.
+
 --------------------------------------------------------------
